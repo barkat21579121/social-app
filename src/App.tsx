@@ -1,9 +1,10 @@
 import React from 'react';
 import './App.css';
 import { Routes , Route ,BrowserRouter} from 'react-router-dom';
-import Main from './pages/Main';
-import Login from './pages/Login';
-import Navbar from './components/Navbar';
+import { Main } from './main/Main';
+import { Login } from './create-post/Login';
+import { Navbar } from './components/Navbar';
+import CreatePost from './pages/CreatePost';
 
 function App() {
   return (
@@ -13,6 +14,8 @@ function App() {
       <Routes>
         <Route path='/' element={<Main/>}/>
         <Route path='/login' element={<Login/>}/>
+        <Route path='/createpost' element={<CreatePost/>}/>
+
 
       </Routes>
     </BrowserRouter>
